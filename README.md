@@ -5,3 +5,5 @@ This tool is created to convert `utcnow` to your UTC region. In this project, i'
 1. Change the number on `myUTC` Variable
 2. Example output from `date` variable is `Monday, 29 November 2021`
 3. Example output from `time` variable is `16:21`
+
+> ### [About the strftime](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes)
