@@ -17,17 +17,17 @@ hour = datetime.strftime(utcnow, "%H")
 minute = datetime.strftime(utcnow, "%M")
 second = datetime.strftime(utcnow, "%S")
 
-#print(myHour)
 
 #Fix the issues 
 days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 if myHour > 24:
     myHour -= 24
-    day_locate = days.index(day)
-    #print(day_locate)
+    day_locate = days.index(day) #Find where is the "day" location on the array
+
     if day_locate > 6:
         day = days[0]
-    day = days[(day_locate+1)]
+    else:
+    	day = days[(day_locate+1)]
 
 
 print(f"{myHour}:{minute}:{second}")
