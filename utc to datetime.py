@@ -10,8 +10,8 @@ utcnow = datetime.utcnow()
 myHour = int(datetime.strftime(utcnow,"%H")) + myUTC
 
 # get the data
-date = datetime.strftime(utcnow, "Date : %A, %d %B %Y") 
-time = datetime.strftime(utcnow, f"Time : {myHour}:%y")
+date = datetime.strftime(utcnow, "%A, %d %B %Y") 
+time = datetime.strftime(utcnow, f"{myHour}:%M")
 
-print(date)
-print(time)
+print("Date : ",date)
+print("Time : ",time)
