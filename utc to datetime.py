@@ -15,6 +15,7 @@ month = datetime.strftime(utcnow, "%B")
 year = datetime.strftime(utcnow, "%Y")
 hour = datetime.strftime(utcnow, "%H")
 minute = datetime.strftime(utcnow, "%M")
+second = datetime.strftime(utcnow, "%S")
 
 #print(myHour)
 
@@ -29,6 +30,6 @@ if myHour > 24:
     day = days[(day_locate+1)]
 
 
-print(f"{myHour}:{minute}")
+print(f"{myHour}:{minute}:{second}")
 print(f"{day}, {date_num} {month} {year}")
 
